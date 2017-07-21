@@ -1,0 +1,28 @@
+[
+  {
+    "POS":"bintang",
+    "testcase":[
+      {
+        "text":"Di langit bintang tersebut berada di sekitar Kutub Utara, dan tidak banyak berpindah ke sekelilingnya.",
+        "sense":"bintang-1"
+      },
+      {
+        "text":"Gianluigi Buffon mendukung Juventus untuk mendatangkan bintang AC Milan, Gianluigi Donnarumma, untuk menggantikan dirinya saat nanti pensiun.",
+        "sense":"bintang-5"
+      }
+    ]
+  },
+  {
+    "POS":"lapangan",
+    "testcase":[
+      {
+        "text":"Terlihat air pada kolam air mancur yang tersebar di Lapangan Banteng itu tampak hijau keruh.",
+        "sense":"lapangan-1"
+      },
+      {
+        "text":"Militer Rusia mengklaim mereka menewaskan dua lagi komandan lapangan ISIS yaitu Abu Omar al-Beljiki dan Abu Yassin al-Masri.",
+        "sense":"lapangan-3"
+      }
+    ]
+  }
+]

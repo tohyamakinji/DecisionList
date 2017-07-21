@@ -1,0 +1,46 @@
+[
+  {
+    "POS":"bintang",
+    "sense":
+    [
+      {
+        "name":"bintang-1",
+        "description":"Benda langit terdiri atas gas menyala seperti matahari, terutama tampak pada malam hari."
+      },
+      {
+        "name":"bintang-2",
+        "description":"Tanda jasa yang berupa medali emas (perak dan sebagainya)."
+      },
+      {
+        "name":"bintang-3",
+        "description":"Planet atau gugusan planet yang menjadi pegangan dalam astrologi untuk menentukan nasib seseorang (rasi)."
+      },
+      {
+        "name":"bintang-4",
+        "description":"Tanda pangkat perwira militer berbentuk seperti bintang, berwarna keemasan."
+      },
+      {
+        "name":"bintang-5",
+        "description":"Pemain yang terkemuka (dalam film, sandiwara)."
+      }
+    ]
+  },
+  {
+    "POS":"lapangan",
+    "sense":
+    [
+      {
+        "name":"lapangan-1",
+        "description":"Tempat atau tanah yang luas (biasanya rata)."
+      },
+      {
+        "name":"lapangan-2",
+        "description":"Tempat (gelanggang) pertandingan (bulutangkis, bola voli, bola basket)."
+      },
+      {
+        "name":"lapangan-3",
+        "description":"Bidang (pekerjaan, pengetahuan, dan sebagainya)."
+      }
+    ]
+  }
+]
