@@ -74,6 +74,9 @@ public class JSONReader {
             case 8 : // SenseLoader.java
                 initializeSenseTagStream();
                 break;
+            case 9 : // LatexWriter.java -> saveTableCoOccurrence()
+                initializeFeatureResultStream();
+                break;
         }
     }
 

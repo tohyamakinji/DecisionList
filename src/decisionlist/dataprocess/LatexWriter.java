@@ -1,10 +1,14 @@
 package decisionlist.dataprocess;
 
 import decisionlist.gui.main.MainProgram;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.ParseException;
 
 import javax.swing.*;
 import java.io.File;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.OutputStream;
 
 /**
@@ -14,6 +18,7 @@ import java.io.OutputStream;
 
 public class LatexWriter {
 
+    private byte classID;
     private MainProgram program;
     private ProgressMonitor monitor;
     private int progress;
@@ -23,10 +28,35 @@ public class LatexWriter {
         this.program = program;
     }
 
+    public void saveTableCoOccurrence(boolean debugMode) throws IOException, ParseException {
+        progress = 0;
+        isBreak = false;
+        classID = 9;
+        JSONReader reader = new JSONReader(classID);
+        reader.setDebugMode(debugMode);
+        monitor = new ProgressMonitor(program.getItemLatexFormat(), "SAVING CO-OCCURRENCE FEATURE", "", 0, getTotalFeature(reader));
+    }
+
+    private int getTotalFeature(JSONReader reader) {
+        int count = 0;
+        JSONObject data, senseData, features;
+        JSONArray senseArray;
+        for (Object o : reader.getFeatureArray()) {
+            data = (JSONObject) o;
+            senseArray = (JSONArray) data.get("sense");
+            for (Object o1 : senseArray) {
+                senseData = (JSONObject) o1;
+                features = (JSONObject) senseData.get("feature");
+                count = count + features.keySet().size();
+            }
+        }
+        return count;
+    }
+
     public void saveTableCollocation() {
         progress = 0;
         isBreak = false;
-        monitor = new ProgressMonitor(program.getItemLatexFormat(), "SAVING FEATURE", "", 0, program.getTableCollocation().getModel().getRowCount() + 15);
+        monitor = new ProgressMonitor(program.getItemLatexFormat(), "SAVING COLLOCATION FEATURE", "", 0, program.getTableCollocation().getModel().getRowCount() + 15);
         CollocationWriterTask task = new CollocationWriterTask();
         task.execute();
     }

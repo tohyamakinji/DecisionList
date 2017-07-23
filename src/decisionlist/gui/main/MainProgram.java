@@ -73,6 +73,9 @@ public class MainProgram {
                 case 3 :
                     latexWriter(panelIdentifier);
                     break;
+                case 4 :
+                    latexWriter(panelIdentifier);
+                    break;
             }
         });
         itemLatexFormat.setFont(font);
@@ -88,6 +91,8 @@ public class MainProgram {
                     case 2 :
                         break;
                     case 3 :
+                        break;
+                    case 4 :
                         break;
                 }
             }
@@ -639,7 +644,10 @@ public class MainProgram {
             @Override
             public void componentShown(ComponentEvent e) {
                 super.componentShown(e);
-                componentChangeIdentifier(true, (byte) 1);
+                if (paneTableCollocation.isVisible())
+                    componentChangeIdentifier(true, (byte) 1);
+                else if (paneTableCoOccurrence.isVisible())
+                    componentChangeIdentifier(true, (byte) 2);
             }
         });
         panelTrainingContainerCard.add(panelTrainingCardTwo, "TrainingCardTwo");
@@ -662,7 +670,7 @@ public class MainProgram {
             @Override
             public void componentShown(ComponentEvent e) {
                 super.componentShown(e);
-                componentChangeIdentifier(true, (byte) 2);
+                componentChangeIdentifier(true, (byte) 3);
             }
         });
         panelTrainingContainerCard.add(panelTrainingCardThree, "TrainingCardThree");
@@ -674,10 +682,13 @@ public class MainProgram {
                 super.componentShown(e);
                 if (panelTrainingCardOne.isVisible())
                     componentChangeIdentifier(false, (byte) 0);
-                else if (panelTrainingCardTwo.isVisible())
-                    componentChangeIdentifier(true, (byte) 1);
-                else if (panelTrainingCardThree.isVisible())
-                    componentChangeIdentifier(true, (byte) 2);
+                else if (panelTrainingCardTwo.isVisible()) {
+                    if (paneTableCollocation.isVisible())
+                        componentChangeIdentifier(true, (byte) 1);
+                    else if (paneTableCoOccurrence.isVisible())
+                        componentChangeIdentifier(true, (byte) 2);
+                } else if (panelTrainingCardThree.isVisible())
+                    componentChangeIdentifier(true, (byte) 3);
             }
         });
         // LAST RIGHT PANEL ROOT CARD CONTAINER
@@ -893,7 +904,7 @@ public class MainProgram {
             @Override
             public void componentShown(ComponentEvent e) {
                 super.componentShown(e);
-                componentChangeIdentifier(true, (byte) 3);
+                componentChangeIdentifier(true, (byte) 4);
             }
         });
         panelTestingContainerCard.add(panelTestingCardTwo, "TestingCardTwo");
@@ -906,7 +917,7 @@ public class MainProgram {
                 if (panelTestingCardOne.isVisible())
                     componentChangeIdentifier(false, (byte) 0);
                 else if (panelTestingCardTwo.isVisible())
-                    componentChangeIdentifier(true, (byte) 3);
+                    componentChangeIdentifier(true, (byte) 4);
             }
         });
         // LAST RIGHT PANEL ROOT CARD CONTAINER
@@ -1086,6 +1097,7 @@ public class MainProgram {
     private void buttonCoOccurrenceResultPressed() {
         paneTableCollocation.setVisible(false);
         paneTableCoOccurrence.setVisible(true);
+        componentChangeIdentifier(true, (byte) 2);
         // START TABLE LOADER
         if (isFirstOccurrence) {
             TableLoader loader = new TableLoader(getDebugModeGroup().equals("ON"));
@@ -1097,6 +1109,7 @@ public class MainProgram {
     private void buttonCollocationResultPressed() {
         paneTableCollocation.setVisible(true);
         paneTableCoOccurrence.setVisible(false);
+        componentChangeIdentifier(true, (byte) 1);
     }
 
     private void trainingButtonPressed() throws IOException, ParseException {
