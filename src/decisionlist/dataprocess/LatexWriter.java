@@ -28,17 +28,27 @@ public class LatexWriter {
         this.program = program;
     }
 
+    public void saveTableDecision(boolean debugMode) throws IOException, ParseException {
+        progress = 0;
+        isBreak = false;
+        classID = 10;
+        JSONReader reader = new JSONReader(classID);
+        reader.setDebugMode(debugMode);
+    }
+
     public void saveTableCoOccurrence(boolean debugMode) throws IOException, ParseException {
         progress = 0;
         isBreak = false;
         classID = 9;
         JSONReader reader = new JSONReader(classID);
         reader.setDebugMode(debugMode);
-        monitor = new ProgressMonitor(program.getItemLatexFormat(), "SAVING CO-OCCURRENCE FEATURE", "", 0, getTotalFeature(reader));
+        monitor = new ProgressMonitor(program.getMainFrame(), "SAVING CO-OCCURRENCE FEATURE", "", 0, getTotalFeature(reader));
+        OccurrenceWriterTask task = new OccurrenceWriterTask(reader);
+        task.execute();
     }
 
     private int getTotalFeature(JSONReader reader) {
-        int count = 0;
+        int count = 5;
         JSONObject data, senseData, features;
         JSONArray senseArray;
         for (Object o : reader.getFeatureArray()) {
@@ -53,10 +63,86 @@ public class LatexWriter {
         return count;
     }
 
+    private class OccurrenceWriterTask extends SwingWorker<Void, Void> {
+
+        JSONReader reader;
+
+        OccurrenceWriterTask(JSONReader reader) {
+            this.reader = reader;
+        }
+
+        @Override
+        protected Void doInBackground() throws Exception {
+            monitor.setProgress(progress);
+            StringBuilder builder = new StringBuilder();
+            builder.append("\\begin{table}[h!]\n")
+                    .append("\t\\centering\n")
+                    .append("\t\\begin{tabular}{ |c|c|c|c| }\n")
+                    .append("\t\t\\hline\n")
+                    .append("\t\t\\textbf{POS} & \\textbf{SENSE} & \\textbf{FEATURE} & \\textbf{OCCURRENCE} \\\\\n")
+                    .append("\t\t\\hline\n");
+            JSONObject data, dataSense, features;
+            JSONArray senseArray;
+            monitor.setNote("Read data ...");
+            // GET DATA
+            for (Object o : reader.getFeatureArray()) {
+                data = (JSONObject) o;
+                senseArray = (JSONArray) data.get("sense");
+                for (Object o1 : senseArray) {
+                    dataSense = (JSONObject) o1;
+                    features = (JSONObject) dataSense.get("feature");
+                    for (Object key : features.keySet()) {
+                        builder.append("\t\t").append(data.get("POS")).append(" & ")
+                                .append(dataSense.get("senseID")).append(" & ")
+                                .append(key).append(" & ")
+                                .append(Long.toString((long) features.get(key))).append(" \\\\\n").append("\t\t\\hline\n");
+                        progress += 1;
+                        monitor.setProgress(Math.min(progress, monitor.getMaximum()));
+                        if (monitor.isCanceled()) {
+                            isBreak = true;
+                            break;
+                        }
+                    }
+                    if (isBreak)
+                        break;
+                }
+                if (isBreak)
+                    break;
+            }
+            if (isBreak) {
+                reader.clear();
+                reader.close();
+                return null;
+            } else {
+                monitor.setNote("Saving file into disk ...");
+                builder.append("\t\\end{tabular}\n")
+                        .append("\t\\caption{Co-occurrence result}\n")
+                        .append("\t\\label{occurrence-result}\n")
+                        .append("\\end{table}");
+                File file = new File(getClass().getResource("/result/features.txt").toURI());
+                OutputStream stream = new FileOutputStream(file, false);
+                stream.write(builder.toString().getBytes());
+                stream.flush();
+                stream.close();
+                reader.clear();
+                reader.close();
+                progress += 5;
+                monitor.setProgress(Math.min(progress, monitor.getMaximum()));
+                return null;
+            }
+        }
+
+        @Override
+        protected void done() {
+            super.done();
+            program.doneWriting();
+        }
+    }
+
     public void saveTableCollocation() {
         progress = 0;
         isBreak = false;
-        monitor = new ProgressMonitor(program.getItemLatexFormat(), "SAVING COLLOCATION FEATURE", "", 0, program.getTableCollocation().getModel().getRowCount() + 15);
+        monitor = new ProgressMonitor(program.getMainFrame(), "SAVING COLLOCATION FEATURE", "", 0, program.getTableCollocation().getModel().getRowCount() + 15);
         CollocationWriterTask task = new CollocationWriterTask();
         task.execute();
     }

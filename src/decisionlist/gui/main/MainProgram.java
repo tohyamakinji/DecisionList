@@ -26,6 +26,7 @@ import java.util.Enumeration;
 
 public class MainProgram {
 
+    private JFrame mainFrame;
     private JPanel panelTrainingContainerCard, rightPanelCard, panelTestingContainerCard, panelTestingCardOne, panelTestingCardTwo, panelTrainingCardOne, panelTrainingCardTwo, panelTrainingCardThree;
     private JScrollPane paneTableCollocation, paneTableCoOccurrence;
     private JLabel labelStartTraining, labelNavigationTwo, labelNavigationThree, gapOneTwo, gapTwoThree, labelNavigationOne, labelStartTesting, testingNavigationOne, testingNavigationTwo, gapOneTwoTesting, labelTrainingProgress, labelTestingProgress;
@@ -51,7 +52,7 @@ public class MainProgram {
 
     private void initComponents() throws IOException, ParseException {
         GridBagConstraints constraints = new GridBagConstraints();
-        JFrame mainFrame = new JFrame("WSD - Decision List");
+        mainFrame = new JFrame("WSD - Decision List");
         // FONT UI MENU BAR
         Font font = new Font("Courier New", Font.BOLD, 12);
         // FILE MENU BAR
@@ -63,19 +64,23 @@ public class MainProgram {
         menuSubBarMenu.setFont(font);
         itemLatexFormat = new JMenuItem("Latex Format (.txt)");
         itemLatexFormat.addActionListener(e -> {
-            switch (panelIdentifier) {
-                case 1 :
-                    latexWriter(panelIdentifier);
-                    break;
-                case 2 :
-                    latexWriter(panelIdentifier);
-                    break;
-                case 3 :
-                    latexWriter(panelIdentifier);
-                    break;
-                case 4 :
-                    latexWriter(panelIdentifier);
-                    break;
+            try {
+                switch (panelIdentifier) {
+                    case 1 :
+                        latexWriter(panelIdentifier);
+                        break;
+                    case 2 :
+                        latexWriter(panelIdentifier);
+                        break;
+                    case 3 :
+                        latexWriter(panelIdentifier);
+                        break;
+                    case 4 :
+                        latexWriter(panelIdentifier);
+                        break;
+                }
+            } catch (Exception error) {
+                error.printStackTrace();
             }
         });
         itemLatexFormat.setFont(font);
@@ -996,13 +1001,32 @@ public class MainProgram {
         componentChangeIdentifier(false, (byte) 0);
     }
 
-    private void latexWriter(byte b) {
+    private void latexWriter(byte b) throws IOException, ParseException {
         if (!isWriting) {
             switch (b) {
                 case 1 :
-                    isWriting = true;
-                    LatexWriter writer = new LatexWriter(this);
-                    writer.saveTableCollocation();
+                    int i = JOptionPane.showConfirmDialog(mainFrame, "You will save this collocation feature,\ncontinue?", "SAVING FILE", JOptionPane.YES_NO_OPTION);
+                    if (i == JOptionPane.YES_OPTION) {
+                        isWriting = true;
+                        LatexWriter writer = new LatexWriter(this);
+                        writer.saveTableCollocation();
+                    }
+                    break;
+                case 2 :
+                    int j = JOptionPane.showConfirmDialog(mainFrame, "You will save this co-occurrence feature,\ncontinue?", "SAVING FILE", JOptionPane.YES_NO_OPTION);
+                    if (j == JOptionPane.YES_OPTION) {
+                        isWriting = true;
+                        LatexWriter writer = new LatexWriter(this);
+                        writer.saveTableCoOccurrence(getDebugModeGroup().equals("ON"));
+                    }
+                    break;
+                case 3 :
+                    int k = JOptionPane.showConfirmDialog(mainFrame, "You will save this decision list,\ncontinue?", "SAVING FILE", JOptionPane.YES_NO_OPTION);
+                    if (k == JOptionPane.YES_OPTION) {
+                        isWriting = true;
+                        LatexWriter writer = new LatexWriter(this);
+                        writer.saveTableDecision(getDebugModeGroup().equals("ON"));
+                    }
                     break;
             }
         }
@@ -1135,6 +1159,10 @@ public class MainProgram {
         isFirstList = true;
     }
 
+    public JFrame getMainFrame() {
+        return mainFrame;
+    }
+
     public JProgressBar getTrainingProgressBar() {
         return trainingProgressBar;
     }
@@ -1177,10 +1205,6 @@ public class MainProgram {
 
     public JButton getButtonViewResult() {
         return buttonViewResult;
-    }
-
-    public JMenuItem getItemLatexFormat() {
-        return itemLatexFormat;
     }
 
     public static void main(String[] args) {
