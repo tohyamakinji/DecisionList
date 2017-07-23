@@ -3,6 +3,7 @@ package decisionlist.gui.main;
 import decisionlist.algorithm.Evaluation;
 import decisionlist.analysis.TestingSet;
 import decisionlist.analysis.TrainingSet;
+import decisionlist.dataprocess.LatexWriter;
 import decisionlist.gui.component.JButtonMain;
 import decisionlist.gui.component.JLabelMain;
 import decisionlist.gui.component.JProgressBarMain;
@@ -38,7 +39,7 @@ public class MainProgram {
     private JTable tableCollocation, tableCoOccurrence, tableDecisionList, tableTestingResult;
     private JTextArea areaResult;
     private JButton buttonViewResult;
-    private boolean isFirstOccurrence, isFirstList;
+    private boolean isFirstOccurrence, isFirstList, isWriting = false;
 
     // Debug purpose
     private boolean debugMode;
@@ -61,20 +62,17 @@ public class MainProgram {
         JMenu menuSubBarMenu = new JMenu("Save As");
         menuSubBarMenu.setFont(font);
         itemLatexFormat = new JMenuItem("Latex Format (.txt)");
-        itemLatexFormat.addMouseListener(new MouseAdapter() {
-            @Override
-            public void mouseClicked(MouseEvent e) {
-                super.mouseClicked(e);
-                switch (panelIdentifier) {
-                    case 0 :
-                        break;
-                    case 1 :
-                        break;
-                    case 2 :
-                        break;
-                    case 3 :
-                        break;
-                }
+        itemLatexFormat.addActionListener(e -> {
+            switch (panelIdentifier) {
+                case 1 :
+                    latexWriter(panelIdentifier);
+                    break;
+                case 2 :
+                    latexWriter(panelIdentifier);
+                    break;
+                case 3 :
+                    latexWriter(panelIdentifier);
+                    break;
             }
         });
         itemLatexFormat.setFont(font);
@@ -85,8 +83,6 @@ public class MainProgram {
             public void mouseClicked(MouseEvent e) {
                 super.mouseClicked(e);
                 switch (panelIdentifier) {
-                    case 0 :
-                        break;
                     case 1 :
                         break;
                     case 2 :
@@ -985,6 +981,25 @@ public class MainProgram {
         mainFrame.setVisible(true);
         // LOADER
         initComboBoxSense();
+        // COMPONENT CHANGE
+        componentChangeIdentifier(false, (byte) 0);
+    }
+
+    private void latexWriter(byte b) {
+        if (!isWriting) {
+            switch (b) {
+                case 1 :
+                    isWriting = true;
+                    LatexWriter writer = new LatexWriter(this);
+                    writer.saveTableCollocation();
+                    break;
+            }
+        }
+    }
+
+    public void doneWriting() {
+        Toolkit.getDefaultToolkit().beep();
+        isWriting = false;
     }
 
     private String getDebugModeGroup() {
@@ -1149,6 +1164,10 @@ public class MainProgram {
 
     public JButton getButtonViewResult() {
         return buttonViewResult;
+    }
+
+    public JMenuItem getItemLatexFormat() {
+        return itemLatexFormat;
     }
 
     public static void main(String[] args) {
