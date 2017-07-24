@@ -28,6 +28,100 @@ public class LatexWriter {
         this.program = program;
     }
 
+    public void saveTestingResult(boolean debugMode) throws IOException, ParseException {
+        progress = 0;
+        isBreak = false;
+        classID = 11;
+        JSONReader reader = new JSONReader(classID);
+        reader.setDebugMode(debugMode);
+        monitor = new ProgressMonitor(program.getMainFrame(), "SAVING TESTING RESULT", "", 0, getTotalResult(reader));
+        ResultWriterTask task = new ResultWriterTask(reader);
+        task.execute();
+    }
+
+    private int getTotalResult(JSONReader reader) {
+        int count = 5;
+        JSONObject data;
+        JSONArray testArray;
+        for (Object o : reader.getResultArray()) {
+            data = (JSONObject) o;
+            testArray = (JSONArray) data.get("testcase");
+            count = count + testArray.size();
+        }
+        return count;
+    }
+
+    private class ResultWriterTask extends SwingWorker<Void, Void> {
+
+        JSONReader reader;
+
+        ResultWriterTask(JSONReader reader) {
+            this.reader = reader;
+        }
+
+        @Override
+        protected Void doInBackground() throws Exception {
+            monitor.setProgress(progress);
+            StringBuilder builder = new StringBuilder();
+            builder.append("\\begin{table}[h!]\n")
+                    .append("\t\\centering\n")
+                    .append("\t\\begin{tabular}{ |c|c|c|c| }\n")
+                    .append("\t\t\\hline\n")
+                    .append("\t\t\\textbf{TEXT} & \\textbf{POS} & \\textbf{SENSE} & \\textbf{PREDICTION} \\\\\n")
+                    .append("\t\t\\hline\n");
+            JSONObject data, testData;
+            JSONArray testArray;
+            monitor.setNote("Read data ...");
+            // GET DATA
+            for (Object o : reader.getResultArray()) {
+                data = (JSONObject) o;
+                testArray = (JSONArray) data.get("testcase");
+                for (Object o1 : testArray) {
+                    testData = (JSONObject) o1;
+                    builder.append("\t\t").append(testData.get("text")).append(" & ")
+                            .append(data.get("POS")).append(" & ")
+                            .append(testData.get("sense")).append(" & ")
+                            .append(testData.get("prediction")).append(" \\\\\n").append("\t\t\\hline\n");
+                    progress += 1;
+                    monitor.setProgress(Math.min(progress, monitor.getMaximum()));
+                    if (monitor.isCanceled()) {
+                        isBreak = true;
+                        break;
+                    }
+                }
+                if (isBreak)
+                    break;
+            }
+            if (isBreak) {
+                reader.clear();
+                reader.close();
+                return null;
+            } else {
+                monitor.setNote("Saving file into disk ...");
+                builder.append("\t\\end{tabular}\n")
+                        .append("\t\\caption{Testing result table}\n")
+                        .append("\t\\label{testing-result}\n")
+                        .append("\\end{table}");
+                File file = new File(getClass().getResource("/result/testing.txt").toURI());
+                OutputStream stream = new FileOutputStream(file, false);
+                stream.write(builder.toString().getBytes());
+                stream.flush();
+                stream.close();
+                reader.clear();
+                reader.close();
+                progress += 5;
+                monitor.setProgress(Math.min(progress, monitor.getMaximum()));
+                return null;
+            }
+        }
+
+        @Override
+        protected void done() {
+            super.done();
+            program.doneWriting();
+        }
+    }
+
     public void saveTableDecision(boolean debugMode) throws IOException, ParseException {
         progress = 0;
         isBreak = false;

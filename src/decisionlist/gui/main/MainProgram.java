@@ -1028,6 +1028,14 @@ public class MainProgram {
                         writer.saveTableDecision(getDebugModeGroup().equals("ON"));
                     }
                     break;
+                case 4 :
+                    int l = JOptionPane.showConfirmDialog(mainFrame, "You will save this testing result,\ncontinue?", "SAVING FILE", JOptionPane.YES_NO_OPTION);
+                    if (l == JOptionPane.YES_OPTION) {
+                        isWriting = true;
+                        LatexWriter writer = new LatexWriter(this);
+                        writer.saveTestingResult(getDebugModeGroup().equals("ON"));
+                    }
+                    break;
             }
         }
     }

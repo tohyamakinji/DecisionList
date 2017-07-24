@@ -80,6 +80,9 @@ public class JSONReader {
             case 10 : // LatexWriter.java -> saveTableDecision()
                 initializeDecisionListStream();
                 break;
+            case 11 : // LatexWriter.java -> saveTestingResult()
+                initializeTestingResultStream();
+                break;
         }
     }
 
