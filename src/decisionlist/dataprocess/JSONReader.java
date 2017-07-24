@@ -77,6 +77,9 @@ public class JSONReader {
             case 9 : // LatexWriter.java -> saveTableCoOccurrence()
                 initializeFeatureResultStream();
                 break;
+            case 10 : // LatexWriter.java -> saveTableDecision()
+                initializeDecisionListStream();
+                break;
         }
     }
 

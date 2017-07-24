@@ -34,6 +34,92 @@ public class LatexWriter {
         classID = 10;
         JSONReader reader = new JSONReader(classID);
         reader.setDebugMode(debugMode);
+        monitor = new ProgressMonitor(program.getMainFrame(), "SAVING DECISION LIST", "", 0, getTotalDecision(reader));
+        DecisionWriterTask task = new DecisionWriterTask(reader);
+        task.execute();
+    }
+
+    private int getTotalDecision(JSONReader reader) {
+        int count = 5;
+        JSONObject data;
+        JSONArray weightArray;
+        for (Object o : reader.getDecisionArray()) {
+            data = (JSONObject) o;
+            weightArray = (JSONArray) data.get("weight");
+            count = count + weightArray.size();
+        }
+        return count;
+    }
+
+    private class DecisionWriterTask extends SwingWorker<Void, Void> {
+
+        JSONReader reader;
+
+        DecisionWriterTask(JSONReader reader) {
+            this.reader = reader;
+        }
+
+        @Override
+        protected Void doInBackground() throws Exception {
+            monitor.setProgress(progress);
+            StringBuilder builder = new StringBuilder();
+            builder.append("\\begin{table}[h!]\n")
+                    .append("\t\\centering\n")
+                    .append("\t\\begin{tabular}{ |c|c|c|c| }\n")
+                    .append("\t\t\\hline\n")
+                    .append("\t\t\\textbf{POS} & \\textbf{COLLOCATION} & \\textbf{SENSE} & \\textbf{LOG-L} \\\\\n")
+                    .append("\t\t\\hline\n");
+            JSONObject data, weightData;
+            JSONArray weightArray;
+            monitor.setNote("Read data ...");
+            // GET DATA
+            for (Object o : reader.getDecisionArray()) {
+                data = (JSONObject) o;
+                weightArray = (JSONArray) data.get("weight");
+                for (Object o1 : weightArray) {
+                    weightData = (JSONObject) o1;
+                    builder.append("\t\t").append(data.get("POS")).append(" & ")
+                            .append(weightData.get("collocation")).append(" & ")
+                            .append(weightData.get("sense")).append(" & ")
+                            .append(weightData.get("LogL")).append(" \\\\\n").append("\t\t\\hline\n");
+                    progress += 1;
+                    monitor.setProgress(Math.min(progress, monitor.getMaximum()));
+                    if (monitor.isCanceled()) {
+                        isBreak = true;
+                        break;
+                    }
+                }
+                if (isBreak)
+                    break;
+            }
+            if (isBreak) {
+                reader.clear();
+                reader.close();
+                return null;
+            } else {
+                monitor.setNote("Saving file into disk ...");
+                builder.append("\t\\end{tabular}\n")
+                        .append("\t\\caption{Decision list result}\n")
+                        .append("\t\\label{decision-result}\n")
+                        .append("\\end{table}");
+                File file = new File(getClass().getResource("/result/decision.txt").toURI());
+                OutputStream stream = new FileOutputStream(file, false);
+                stream.write(builder.toString().getBytes());
+                stream.flush();
+                stream.close();
+                reader.clear();
+                reader.close();
+                progress += 5;
+                monitor.setProgress(Math.min(progress, monitor.getMaximum()));
+                return null;
+            }
+        }
+
+        @Override
+        protected void done() {
+            super.done();
+            program.doneWriting();
+        }
     }
 
     public void saveTableCoOccurrence(boolean debugMode) throws IOException, ParseException {
