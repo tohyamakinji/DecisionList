@@ -64,7 +64,7 @@ public class DecisionListNonGUI {
             dictionary.add(line);
         }
         Lemmatizer lemmatizer = new DefaultLemmatizer(dictionary);
-        System.out.println(lemmatizer.lemmatize("Persegres"));
+        System.out.println(lemmatizer.lemmatize("berbulan"));
         bufferedReader.close();
         inputStream.close();
         dictionary.clear();
@@ -116,7 +116,7 @@ public class DecisionListNonGUI {
 
     public static void main(String[] args) {
         try {
-            new DecisionListNonGUI((byte) 7);
+            new DecisionListNonGUI((byte) 6);
         } catch (Exception e) {
             e.printStackTrace();
         }

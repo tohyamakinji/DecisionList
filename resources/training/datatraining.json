@@ -1,107 +1,672 @@
 [
   {
-    "POS":"bintang",
-    "text":"Di langit bintang tersebut berada di sekitar Kutub Utara, dan tidak banyak berpindah ke sekelilingnya.",
-    "sense":"bintang-1"
+    "POS":"bulan",
+    "text":"Delapan bulan yang lalu, NASA memilih enam orang, dua perempuan dan empat pria, untuk melaksanakan sebuah misi.",
+    "sense":"bulan-2"
   },
   {
-    "POS":"bintang",
-    "text":"Gianluigi Buffon mendukung Juventus untuk mendatangkan bintang AC Milan, Gianluigi Donnarumma, untuk menggantikan dirinya saat nanti pensiun.",
-    "sense":"bintang-5"
+    "POS":"bulan",
+    "text":"Satu bulan lalu.",
+    "sense":"bulan-2"
   },
   {
-    "POS":"bintang",
-    "text":"Budi Gunawan menggunakan seragam dengan bintang empat usai dilantik sebagai Kepala Badan Intelijen Negara, di Kompleks Istana Kepresidenan.",
-    "sense":"bintang-4"
+    "POS":"bulan",
+    "text":"Dua bulan sekarang.",
+    "sense":"bulan-2"
   },
   {
-    "POS":"bintang",
-    "text":"Mantan Kepala Lembaga Pendidikan Polri itu tak lagi memanggul bintang tiga, melainkan bintang empat di pundaknya.",
-    "sense":"bintang-4"
+    "POS":"bulan",
+    "text":"Tiga bulan akan datang.",
+    "sense":"bulan-2"
   },
   {
-    "POS":"bintang",
-    "text":"Sama seperti matahari, bintang itu akan terbit dari timur, lantas naik dan bergerak ke barat.",
-    "sense":"bintang-1"
+    "POS":"bulan",
+    "text":"Empat bulan.",
+    "sense":"bulan-2"
   },
   {
-    "POS":"bintang",
-    "text":"Bintang itu merupakan bintang paling terang yang bisa diamati dari bumi.",
-    "sense":"bintang-1"
+    "POS":"bulan",
+    "text":"Lima bulan.",
+    "sense":"bulan-2"
   },
   {
-    "POS":"bintang",
-    "text":"Sirius sebenarnya merupakan sistem bintang ganda, terdiri dari Sirius A dan B, salah satunya merupakan bintang katai putih.",
-    "sense":"bintang-1"
+    "POS":"bulan",
+    "text":"Enam bulan.",
+    "sense":"bulan-2"
   },
   {
-    "POS":"bintang",
-    "text":"Seorang pria 82 tahun yang disebut sebagai bintang film porno tertua di dunia mengungkap rahasia vitalitasnya di usia yang sudah sangat uzur itu.",
-    "sense":"bintang-5"
+    "POS":"bulan",
+    "text":"Tujuh bulan.",
+    "sense":"bulan-2"
   },
   {
-    "POS":"bintang",
-    "text":"Dia membintangi serangkaian film berjudul Elderly.",
-    "sense":"bintang-5"
+    "POS":"bulan",
+    "text":"Sembilan bulan.",
+    "sense":"bulan-2"
   },
   {
-    "POS":"bintang",
-    "text":"Padahal ada tujuh orang jenderal bintang tiga yang dianggap layak menggantikan Badrodin Haiti.",
-    "sense":"bintang-4"
+    "POS":"bulan",
+    "text":"Selama Sepuluh bulan.",
+    "sense":"bulan-2"
   },
   {
-    "POS":"lapangan",
-    "text":"Militer Rusia mengklaim mereka menewaskan dua lagi komandan lapangan ISIS yaitu Abu Omar al-Beljiki dan Abu Yassin al-Masri.",
-    "sense":"lapangan-3"
+    "POS":"bulan",
+    "text":"Hal pertama yang nantinya akan dilakukan oleh tim selepas delapan bulan memakan makanan beku adalah pesta makan buah-buahan dan sayuran.",
+    "sense":"bulan-2"
   },
   {
-    "POS":"lapangan",
-    "text":"Semilir angin begitu terasa saat menginjakkan kaki di Lapangan Banteng, sebuah ruang terbuka hijau yang terletak di pusat Ibu Kota.",
-    "sense":"lapangan-1"
+    "POS":"bulan",
+    "text":"Diuji coba misalnya selama enam bulan.",
+    "sense":"bulan-2"
   },
   {
-    "POS":"lapangan",
-    "text":"Terlihat air pada kolam air mancur yang tersebar di Lapangan Banteng itu tampak hijau keruh.",
-    "sense":"lapangan-1"
+    "POS":"bulan",
+    "text":"Diperkosa setiap hari selama enam bulan, sebelum melarikan diri, dan sekarang menjalani terapi di satu lokasi rahasia di Jerman.",
+    "sense":"bulan-2"
   },
   {
-    "POS":"lapangan",
-    "text":"Di Lapangan Banteng, terdapat dua lapangan basket dan dua lapangan sepak bola berukuran besar.",
-    "sense":"lapangan-1"
+    "POS":"bulan",
+    "text":"Sudah lebih dari lima bulan menjalani perawatan medis.",
+    "sense":"bulan-2"
   },
   {
-    "POS":"lapangan",
-    "text":"Menurut Gubernur DKI Jakarta nonaktif, Basuki Tjahaja Purnama, renovasi lapangan ini akan menggunakan dana corporate social responsibility (CSR) dari McDonald's.",
-    "sense":"lapangan-1"
+    "POS":"bulan",
+    "text":"Sedang menunggu proses operasi mata, yang baru kemungkinan akan dilakukan bulan depan.",
+    "sense":"bulan-2"
   },
   {
-    "POS":"lapangan",
-    "text":"Penembakan terjadi di lapangan tempat anggota tim bisbol Partai Republik berlatih.",
-    "sense":"lapangan-1"
+    "POS":"bulan",
+    "text":"Akan bisa masuk ke tahap medis selanjutnya yakni pemulihan selama empat bulan ke depan.",
+    "sense":"bulan-2"
   },
   {
-    "POS":"lapangan",
-    "text":"Diharapkan, 200.000 pengusaha baru tersebut bisa menciptakan 2 juta lapangan kerja.",
-    "sense":"lapangan-3"
+    "POS":"bulan",
+    "text":"Memperkirakan perbaikan turap akan selesai dalam waktu setengah bulan.",
+    "sense":"bulan-2"
   },
   {
-    "POS":"lapangan",
-    "text":"Dia akan memberi kesempatan kepada masyarakat Jakarta untuk membuka lapangan kerja dengan mengikuti program kewirausahaan yang nanti digagasnya.",
-    "sense":"lapangan-3"
+    "POS":"bulan",
+    "text":"Melatih klub yang bermarkas di kota Bangkok itu sejak bulan Juni lalu.",
+    "sense":"bulan-2"
   },
   {
-    "POS":"lapangan",
-    "text":"Gelandang Persegres tak pedulikan posisi di lapangan.",
-    "sense":"lapangan-2"
+    "POS":"bulan",
+    "text":"Hanya Tiga Bulan Melatih.",
+    "sense":"bulan-2"
   },
   {
-    "POS":"lapangan",
-    "text":"Kementerian Pemuda dan Olahraga (Kemenpora) ingin memastikan bahwa pemberian bantuan untuk pembangunan atau revitalisasi lapangan olahraga desa.",
-    "sense":"lapangan-1"
+    "POS":"bulan",
+    "text":"Istrinya sedang hamil empat bulan.",
+    "sense":"bulan-2"
   },
   {
-    "POS":"lapangan",
-    "text":"Seorang ibu dengan kain kuning terlilit di pinggangnya berlutut di pinggir lapangan.",
-    "sense":"lapangan-2"
+    "POS":"bulan",
+    "text":"Penataran itu berlangsung selama dua bulan.",
+    "sense":"bulan-2"
+  },
+  {
+    "POS":"bulan",
+    "text":"Bulan Januari datang.",
+    "sense":"bulan-2"
+  },
+  {
+    "POS":"bulan",
+    "text":"Bulan Februari nanti.",
+    "sense":"bulan-2"
+  },
+  {
+    "POS":"bulan",
+    "text":"Bulan Maret.",
+    "sense":"bulan-2"
+  },
+  {
+    "POS":"bulan",
+    "text":"Bulan April.",
+    "sense":"bulan-2"
+  },
+  {
+    "POS":"bulan",
+    "text":"Bulan Mei.",
+    "sense":"bulan-2"
+  },
+  {
+    "POS":"bulan",
+    "text":"Bulan Juni.",
+    "sense":"bulan-2"
+  },
+  {
+    "POS":"bulan",
+    "text":"Bulan Juli.",
+    "sense":"bulan-2"
+  },
+  {
+    "POS":"bulan",
+    "text":"Bulan Agustus.",
+    "sense":"bulan-2"
+  },
+  {
+    "POS":"bulan",
+    "text":"Bulan September.",
+    "sense":"bulan-2"
+  },
+  {
+    "POS":"bulan",
+    "text":"Bulan Oktober.",
+    "sense":"bulan-2"
+  },
+  {
+    "POS":"bulan",
+    "text":"Bulan November.",
+    "sense":"bulan-2"
+  },
+  {
+    "POS":"bulan",
+    "text":"Bulan Desember.",
+    "sense":"bulan-2"
+  },
+  {
+    "POS":"bulan",
+    "text":"Ditemukan tewas setelah menghilang dari rumahnya selama dua bulan.",
+    "sense":"bulan-2"
+  },
+  {
+    "POS":"bulan",
+    "text":"Keduanya kemudian melakukan pencarian selama dua bulan.",
+    "sense":"bulan-2"
+  },
+  {
+    "POS":"bulan",
+    "text":"Sebelas bulan.",
+    "sense":"bulan-2"
+  },
+  {
+    "POS":"bulan",
+    "text":"Terendam banjir belasan bulan.",
+    "sense":"bulan-2"
+  },
+  {
+    "POS":"bulan",
+    "text":"Bulan merupakan tempat paling logis sebagai tempat tinggal baru, sebelum beralih ke Mars.",
+    "sense":"bulan-1"
+  },
+  {
+    "POS":"bulan",
+    "text":"Sebuah penelitian menambah besar potensi bulan untuk dijadikan batu loncatan.",
+    "sense":"bulan-1"
+  },
+  {
+    "POS":"bulan",
+    "text":"Menggunakan data dari wahana antariksa SELENE (Kaguya) dan mempelajari dari mana oksigen di Bulan berasal.",
+    "sense":"bulan-1"
+  },
+  {
+    "POS":"bulan",
+    "text":"Bulan terlindungi dari angin Matahari oleh magnetosfer Bumi, sebuah gelembung di mana medan magnet Bumi punya pengaruh cukup besar.",
+    "sense":"bulan-1"
+  },
+  {
+    "POS":"bulan",
+    "text":"Selama sekitar lima hari tiap bulannya.",
+    "sense":"bulan-2"
+  },
+  {
+    "POS":"bulan",
+    "text":"Ion oksigen perlahan-lahan bergerak dari bumi ke bulan dan tertanam di lapisan atas permukaan bulan yang terdiri dari tanah dan batuan.",
+    "sense":"bulan-1"
+  },
+  {
+    "POS":"bulan",
+    "text":"Dengan mempelajari sampel batuan Bulan, Terada juga berharap dapat memahami perubahan atmosfer bumi dari waktu ke waktu serta seberapa besar pengaruh perubahan atrmosfer terhadap evolusi berbagai bentuk kehidupan di Bumi.",
+    "sense":"bulan-1"
+  },
+  {
+    "POS":"bulan",
+    "text":"Wisata ke bulan tak lagi mustahil.",
+    "sense":"bulan-1"
+  },
+  {
+    "POS":"bulan",
+    "text":"Manusia selalu bermimpi untuk bisa pergi ke bulan.",
+    "sense":"bulan-1"
+  },
+  {
+    "POS":"bulan",
+    "text":"Wisata ke bulan menggunakan kapal luar angkasa.",
+    "sense":"bulan-1"
+  },
+  {
+    "POS":"bulan",
+    "text":"Moon Express adalah satu-satunya perusahaan swasta yang diberikan izin perjalanan di orbit bumi dan bulan.",
+    "sense":"bulan-1"
+  },
+  {
+    "POS":"bulan",
+    "text":"Bukti baru tunjukkan adanya air yang melimpah di dalam bulan.",
+    "sense":"bulan-1"
+  },
+  {
+    "POS":"bulan",
+    "text":"Ada lebih banyak air di bulan daripada yang kita duga sebelumnya.",
+    "sense":"bulan-1"
+  },
+  {
+    "POS":"bulan",
+    "text":"Data satelit terbaru untuk mencari tanda-tanda butiran bantalan air di tempat lain di bulan.",
+    "sense":"bulan-1"
+  },
+  {
+    "POS":"bulan",
+    "text":"Fakta ini menunjukkan bahwa memang ada air di dalam bulan saat letusan gunung berapi ini terjadi.",
+    "sense":"bulan-1"
+  },
+  {
+    "POS":"bulan",
+    "text":"NASA menabrakkan sebuah roket dan satelit ke sebuah kawah di kutub selatan bulan, dengan harapan bisa mendapat bukti tambahan mengenai air bulan.",
+    "sense":"bulan-1"
+  },
+  {
+    "POS":"bulan",
+    "text":"Para ilmuwan melihat lebih dekat pada batuan bulan yang dikumpulkan dan menemukan lebih banyak simbol air dalam mineral yang disebut apatit.",
+    "sense":"bulan-1"
+  },
+  {
+    "POS":"bulan",
+    "text":"Semua air di bagian dalam bulan sama dengan lautan seluas halaman yang menutupi seluruh permukaan bulan.",
+    "sense":"bulan-1"
+  },
+  {
+    "POS":"bulan",
+    "text":"Sebuah sinyal beri petunjuk soal bulan alien pertama di alam semesta.",
+    "sense":"bulan-1"
+  },
+  {
+    "POS":"bulan",
+    "text":"Sinyal itu adalah tanda keberadaan bulan alien pertama di alam semesta.",
+    "sense":"bulan-1"
+  },
+  {
+    "POS":"bulan",
+    "text":"Bulan alien di sini bukan bulan yang dihuni alien melainkan benda langit yang mengelilingi sebuah planet di luar tata surya.",
+    "sense":"bulan-1"
+  },
+  {
+    "POS":"bulan",
+    "text":"Kemungkinan besar bulan itu mengorbit planet setara neptunus.",
+    "sense":"bulan-1"
+  },
+  {
+    "POS":"bulan",
+    "text":"Bulan jatuh dalam ribaan",
+    "sense":"bulan-3"
+  },
+  {
+    "POS":"bulan",
+    "text":"Bagai bulan kesiangan",
+    "sense":"bulan-3"
+  },
+  {
+    "POS":"bulan",
+    "text":"Bagai bulan dengan matahari",
+    "sense":"bulan-3"
+  },
+  {
+    "POS":"bulan",
+    "text":"Bagai pungguk merindukan bulan.",
+    "sense":"bulan-3"
+  },
+  {
+    "POS":"bulan",
+    "text":"Bulan naik, matahari naik",
+    "sense":"bulan-3"
+  },
+  {
+    "POS":"bulan",
+    "text":"Si cebol hendak mencapai bulan.",
+    "sense":"bulan-3"
+  },
+  {
+    "POS":"bulan",
+    "text":"Datang bulan.",
+    "sense":"bulan-2"
+  },
+  {
+    "POS":"bulan",
+    "text":"Bulan madu.",
+    "sense":"bulan-2"
+  },
+  {
+    "POS":"bulan",
+    "text":"Miliarder baru di India dalam hampir setiap satu bulan.",
+    "sense":"bulan-2"
+  },
+  {
+    "POS":"bulan",
+    "text":"Setelah enam bulan beroperasi, barulah skytrain bandara tanpa pengemudi.",
+    "sense":"bulan-2"
+  },
+  {
+    "POS":"bulan",
+    "text":"Beroperasi tanpa pengemudi enam bulan setelah operasional pertamanya.",
+    "sense":"bulan-2"
+  },
+  {
+    "POS":"bulan",
+    "text":"Enam bulan pertama.",
+    "sense":"bulan-2"
+  },
+  {
+    "POS":"bulan",
+    "text":"Bulan depan.",
+    "sense":"bulan-2"
+  },
+  {
+    "POS":"bulan",
+    "text":"Bulan besok.",
+    "sense":"bulan-2"
+  },
+  {
+    "POS":"bulan",
+    "text":"Banding ditolak, tetap divonis bulan penjara.",
+    "sense":"bulan-2"
+  },
+  {
+    "POS":"bulan",
+    "text":"Janin dari dalam perut bayi sepuluh Bulan.",
+    "sense":"bulan-2"
+  },
+  {
+    "POS":"bulan",
+    "text":"operasi pengangkatan janin di dalam perut bayi bulan baru dilaksanakan hari ini karena melihat kondisi kesehatan bayi.",
+    "sense":"bulan-2"
+  },
+  {
+    "POS":"bulan",
+    "text":"Lokasi bulan madu ternyata langganan bintang Hollywood.",
+    "sense":"bulan-2"
+  },
+  {
+    "POS":"bulan",
+    "text":"Sedang berbulan madu di Italia.",
+    "sense":"bulan-2"
+  },
+  {
+    "POS":"bulan",
+    "text":"Danau Como mungkin bukan destinasi biasa untuk berbulan madu.",
+    "sense":"bulan-2"
+  },
+  {
+    "POS":"bulan",
+    "text":"Fenomena bulan kerdil.",
+    "sense":"bulan-1"
+  },
+  {
+    "POS":"bulan",
+    "text":"Ukuran bulan jika dibandingkan dengan bulan purnama biasa adalah persen lebih kecil.",
+    "sense":"bulan-1"
+  },
+  {
+    "POS":"bulan",
+    "text":"Sinar bulan juga akan lebih redup walaupun sulit untuk disadari.",
+    "sense":"bulan-1"
+  },
+  {
+    "POS":"bulan",
+    "text":"Kurang lebih, peredupan cahaya bulan akibat jarak yang lebih jauh adalah sebesar persen.",
+    "sense":"bulan-1"
+  },
+  {
+    "POS":"bulan",
+    "text":"Fenomena minimoon terjadi karena orbit bulan mengelilingi bumi tak berbentuk lingkaran sempurna, melainkan elips.",
+    "sense":"bulan-1"
+  },
+  {
+    "POS":"bulan",
+    "text":"Orbit berbentuk elips membuat bulan kadang berjarak lebih dekat dan lebih jauh dari bumi, berpengaruh pada ukuran piringannya.",
+    "sense":"bulan-1"
+  },
+  {
+    "POS":"bulan",
+    "text":"Menatap ke langit saat itu, maka saat itulah bulan berada pada titik terjauh.",
+    "sense":"bulan-1"
+  },
+  {
+    "POS":"bulan",
+    "text":"Begini indahnya gerhana bulan sebagian semalam.",
+    "sense":"bulan-1"
+  },
+  {
+    "POS":"bulan",
+    "text":"Gambaran penampakan bulan saat puncak gerhana terekam dari berbagai wilayah di Indonesia pada Selasa dini hari.",
+    "sense":"bulan-1"
+  },
+  {
+    "POS":"bulan",
+    "text":"Bulan dengan wajah itu bisa dilihat dengan mata telanjang, tak perlu alat bantu.",
+    "sense":"bulan-1"
+  },
+  {
+    "POS":"bulan",
+    "text":"Sementara, satu gerhana bulan lainnya cuma gerhana penumbra sehingga tak kasatmata.",
+    "sense":"bulan-1"
+  },
+  {
+    "POS":"bulan",
+    "text":"Bulan terakhir.",
+    "sense":"bulan-2"
+  },
+  {
+    "POS":"bulan",
+    "text":"Jangka waktu tiga bulan.",
+    "sense":"bulan-2"
+  },
+  {
+    "POS":"bulan",
+    "text":"Periode bulan sebelumnya.",
+    "sense":"bulan-2"
+  },
+  {
+    "POS":"bulan",
+    "text":"Sekitar lima bulan.",
+    "sense":"bulan-2"
+  },
+  {
+    "POS":"bulan",
+    "text":"Umur satu bulan.",
+    "sense":"bulan-2"
+  },
+  {
+    "POS":"bulan",
+    "text":"Foto-foto fase terjadinya gerhana bulan sebagian itu terekam dengan baik.",
+    "sense":"bulan-1"
+  },
+  {
+    "POS":"bulan",
+    "text":"Kolase gerhana bulan sebagian.",
+    "sense":"bulan-1"
+  },
+  {
+    "POS":"bulan",
+    "text":"Kolase proses gerhana bulan parsial.",
+    "sense":"bulan-1"
+  },
+  {
+    "POS":"bulan",
+    "text":"Gelar bulan patuh trotoar",
+    "sense":"bulan-2"
+  },
+  {
+    "POS":"bulan",
+    "text":"Penertiban trotoar akan dilakukan secara intensif pada bulan itu.",
+    "sense":"bulan-2"
+  },
+  {
+    "POS":"bulan",
+    "text":"Gelar bulan tertib trotoar.",
+    "sense":"bulan-2"
+  },
+  {
+    "POS":"bulan",
+    "text":"Bulan kemerdekaan.",
+    "sense":"bulan-2"
+  },
+  {
+    "POS":"bulan",
+    "text":"Bulan kemenangan.",
+    "sense":"bulan-2"
+  },
+  {
+    "POS":"bulan",
+    "text":"Bulan puasa.",
+    "sense":"bulan-2"
+  },
+  {
+    "POS":"bulan",
+    "text":"Gelar sidang Isbat awal bulan Syawal.",
+    "sense":"bulan-2"
+  },
+  {
+    "POS":"bulan",
+    "text":"1 bulan.",
+    "sense":"bulan-2"
+  },
+  {
+    "POS":"bulan",
+    "text":"2 bulan.",
+    "sense":"bulan-2"
+  },
+  {
+    "POS":"bulan",
+    "text":"Selama 3 hingga 4 bulan, warga di Rusunawa Penjaringan Sari bersih-bersih dan perbaikan.",
+    "sense":"bulan-2"
+  },
+  {
+    "POS":"bulan",
+    "text":"Karena dari umur 3 bulan, anak sudah bisa dikenalkan dengan buku.",
+    "sense":"bulan-2"
+  },
+  {
+    "POS":"bulan",
+    "text":"4 bulan.",
+    "sense":"bulan-2"
+  },
+  {
+    "POS":"bulan",
+    "text":"5 bulan.",
+    "sense":"bulan-2"
+  },
+  {
+    "POS":"bulan",
+    "text":"Kepada wartawan, mengaku tak punya masalah serius dengan sang istri yang baru dinikahi selama 6 bulan ini.",
+    "sense":"bulan-2"
+  },
+  {
+    "POS":"bulan",
+    "text":"7 bulan.",
+    "sense":"bulan-2"
+  },
+  {
+    "POS":"bulan",
+    "text":"8 bulan.",
+    "sense":"bulan-2"
+  },
+  {
+    "POS":"bulan",
+    "text":"Mengandung si kecil kurang lebih 9 bulan lalu melahirkan, pastinya ada perubahan yang dialami tubuh seorang ibu.",
+    "sense":"bulan-2"
+  },
+  {
+    "POS":"bulan",
+    "text":"10 bulan.",
+    "sense":"bulan-2"
+  },
+  {
+    "POS":"bulan",
+    "text":"11 bulan.",
+    "sense":"bulan-2"
+  },
+  {
+    "POS":"bulan",
+    "text":"12 bulan.",
+    "sense":"bulan-2"
+  },
+  {
+    "POS":"bulan",
+    "text":"Dahi sehari bulan.",
+    "sense":"bulan-3"
+  },
+  {
+    "POS":"bulan",
+    "text":"Bulan adalah benda langit yang paling terang setelah Matahari.",
+    "sense":"bulan-1"
+  },
+  {
+    "POS":"bulan",
+    "text":"Bulan menyelesaikan orbit lengkap mengelilingi Bumi setiap hari sekali (periode sideris).",
+    "sense":"bulan-1"
+  },
+  {
+    "POS":"bulan",
+    "text":"Bulan Ramadan.",
+    "sense":"bulan-2"
+  },
+  {
+    "POS":"bulan",
+    "text":"Bulan Ramadhan.",
+    "sense":"bulan-2"
+  },
+  {
+    "POS":"bulan",
+    "text":"Selama bulan puasa.",
+    "sense":"bulan-2"
+  },
+  {
+    "POS":"bulan",
+    "text":"Bulan kelahiran.",
+    "sense":"bulan-2"
+  },
+  {
+    "POS":"bulan",
+    "text":"Anak yang lahir di bulan-bulan musim panas memiliki kemungkinan lebih rendah untuk menjadi pemain sepakbola, dokter gigi atau dokter.",
+    "sense":"bulan-2"
+  },
+  {
+    "POS":"bulan",
+    "text":"Para ilmuwan tidak dapat memastikan apakah sampel Apollo tersebut bersifat unik ataukah banyak bantalan air lainnya yang memenuhi bulan.",
+    "sense":"bulan-1"
+  },
+  {
+    "POS":"bulan",
+    "text":"Bulan tidak memiliki medan magnet dan tak memiliki cukup atmosfer untuk menghasilkan suara-suara itu.",
+    "sense":"bulan-1"
+  },
+  {
+    "POS":"bulan",
+    "text":"Pilot Apollo 11, mengatakan mendengar suara-suara saat terbang di sekitar sekitar sisi gelap bulan tapi diberitahu oleh para insinyur bahwa itu hanya interferensi radio.",
+    "sense":"bulan-1"
+  },
+  {
+    "POS":"bulan",
+    "text":"Bahwa suara-suara itu muncul ketika kedua radio dihidupkan di kedua modul dan berada dekat satu sama lain, tapi berhenti ketika modul mendarat di bulan.",
+    "sense":"bulan-1"
+  },
+  {
+    "POS":"bulan",
+    "text":"Para ahli geologi mulai mencurigai bahwa bulan memiliki waduk tersembunyi yang terkunci di bebatuannya.",
+    "sense":"bulan-1"
+  },
+  {
+    "POS":"bulan",
+    "text":"Mereka percaya bahwa otak manusia, yang sebagian besarnya terdiri dari air, dipengaruhi oleh Bulan yang menguasai pasang surut, tetapi gravitasi Bulan terlalu kecil untuk memengaruhi satu orang.",
+    "sense":"bulan-1"
+  },
+  {
+    "POS":"bulan",
+    "text":"Bulan memiliki albedo yang sangat rendah, dengan tingkat kecerahan yang sedikit lebih terang dari aspal hitam.",
+    "sense":"bulan-1"
+  },
+  {
+    "POS":"bulan",
+    "text":"Konstansi warna pada sistem visual Bulan mengkalibrasi hubungan antara warna objek dan sekitarnya, karena langit di sekitar Bulan relatif gelap, Bulan yang diterangi Matahari tampak sebagai benda langit yang terang.",
+    "sense":"bulan-1"
   }
 ]

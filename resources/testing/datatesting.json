@@ -1,27 +1,406 @@
 [
   {
-    "POS":"bintang",
+    "POS":"bulan",
     "testcase":[
       {
-        "text":"Di langit bintang tersebut berada di sekitar Kutub Utara, dan tidak banyak berpindah ke sekelilingnya.",
-        "sense":"bintang-1"
+        "text":"Bahkan uang sewa bulan terakhir kabarnya juga belum dibayar.",
+        "sense":"bulan-2"
       },
       {
-        "text":"Gianluigi Buffon mendukung Juventus untuk mendatangkan bintang AC Milan, Gianluigi Donnarumma, untuk menggantikan dirinya saat nanti pensiun.",
-        "sense":"bintang-5"
-      }
-    ]
-  },
-  {
-    "POS":"lapangan",
-    "testcase":[
-      {
-        "text":"Terlihat air pada kolam air mancur yang tersebar di Lapangan Banteng itu tampak hijau keruh.",
-        "sense":"lapangan-1"
+        "text":"Sekitar bulan Mei lalu, korban datang dan bertemu dengan pelaku di salon miliknya di kawasan Semboro.",
+        "sense":"bulan-2"
       },
       {
-        "text":"Militer Rusia mengklaim mereka menewaskan dua lagi komandan lapangan ISIS yaitu Abu Omar al-Beljiki dan Abu Yassin al-Masri.",
-        "sense":"lapangan-3"
+        "text":"Dia masih tinggal sekitar 2 bulanan, sebelum akhirnya pergi meninggalkan kontrakan, tanpa pamit kepada pemilik rumah.",
+        "sense":"bulan-2"
+      },
+      {
+        "text":"Willy menerangkan pinjaman itu dilunasi dalam jangka waktu 2 bulan.",
+        "sense":"bulan-2"
+      },
+      {
+        "text":"Dikerjakan selama tiga bulan, motor skutik racikan Oki Rahmola ini siap membuat Anda semangat dalam perjalanan.",
+        "sense":"bulan-2"
+      },
+      {
+        "text":"Dari data uang beredar BI per Juli 2017 bunga kredit perbankan tercatat 11,73% lebih rendah dibandingkan periode bulan sebelumnya 11,77%.",
+        "sense":"bulan-2"
+      },
+      {
+        "text":"Selama 3 hingga 4 bulan, warga di Rusunawa Penjaringan Sari 1 dan 2 bersih-bersih dan perbaikan.",
+        "sense":"bulan-2"
+      },
+      {
+        "text":"Karena peluang berkoalisi dengan SPD tertutup, proses Merkel membangun koalisi baru diperkirakan akan memakan waktu berbulan-bulan.",
+        "sense":"bulan-2"
+      },
+      {
+        "text":"Wenger bulan lalu menyebut kalau Liga Inggris mulai mengalahkan Liga Champions dalam hal daya pikat.",
+        "sense":"bulan-2"
+      },
+      {
+        "text":"Kejadian itu pun diketahui terjadi pada bulan Maret tahun lalu, tapi Sabina baru melayangkan tuntutannya baru-baru ini.",
+        "sense":"bulan-2"
+      },
+      {
+        "text":"Traveler bisa melihat cantiknya bunga tanaman yang mekar di setiap bulan Mei ini.",
+        "sense":"bulan-2"
+      },
+      {
+        "text":"Mendagri sangat kecewa dengan kasus OTT di tiga bulan terakhir ini.",
+        "sense":"bulan-2"
+      },
+      {
+        "text":"Dalam satu bulan, para pelaku mampu membuat 20 paspor.",
+        "sense":"bulan-2"
+      },
+      {
+        "text":"Mengandung si kecil kurang lebih 9 bulan lalu melahirkan, pastinya ada perubahan yang dialami tubuh seorang ibu.",
+        "sense":"bulan-2"
+      },
+      {
+        "text":"Pada bulan Juli 2017, kelompok tersebut mengklaim telah mendistribusikan poster berbahasa China di Melbourne.",
+        "sense":"bulan-2"
+      },
+      {
+        "text":"Kepada wartawan, dia mengaku tak punya masalah serius dengan sang istri yang baru dinikahi selama 6 bulan ini.",
+        "sense":"bulan-2"
+      },
+      {
+        "text":"Produk itu akan segera diluncurkan oleh Nikuta Mirzani pada bulan Oktober mendatang.",
+        "sense":"bulan-2"
+      },
+      {
+        "text":"Iya Bun, karena dari umur 3 bulan, anak sudah bisa dikenalkan dengan buku. Mereka bisa mengenal bahwa sebuah buku ada ceritanya.",
+        "sense":"bulan-2"
+      },
+      {
+        "text":"Menurut pengakuan, pelaku baru beroperasi selama tujuh bulan.",
+        "sense":"bulan-2"
+      },
+      {
+        "text":"Saat ini ia mengaku sedang menikmati fase bulan madu dan belum mempersiapkan diri untuk menghadapi pertarungan selanjutnya.",
+        "sense":"bulan-2"
+      },
+      {
+        "text":"Travis dan Rousey menikah bulan Agustus lalu di Amerika Serikat.",
+        "sense":"bulan-2"
+      },
+      {
+        "text":"Pepat kuku seperti bulan tiga hari.",
+        "sense":"bulan-3"
+      },
+      {
+        "text":"Bulan jatuh dalam ribaan.",
+        "sense":"bulan-3"
+      },
+      {
+        "text":"Seperti pungguk merindukan bulan.",
+        "sense":"bulan-3"
+      },
+      {
+        "text":"si cebol hendak mencapai bulan (bintang).",
+        "sense":"bulan-3"
+      },
+      {
+        "text":"Dahi sehari bulan.",
+        "sense":"bulan-3"
+      },
+      {
+        "text":"Bulan naik, matahari naik.",
+        "sense":"bulan-3"
+      },
+      {
+        "text":"Bagai bulan dengan matahari.",
+        "sense":"bulan-3"
+      },
+      {
+        "text":"Bulan adalah satelit alami Bumi satu-satunya dan merupakan bulan terbesar kelima dalam Tata Surya.",
+        "sense":"bulan-1"
+      },
+      {
+        "text":"Bulan adalah benda langit yang paling terang setelah Matahari.",
+        "sense":"bulan-1"
+      },
+      {
+        "text":"Misi berawak ke Bulan pada masa depan telah direncakan oleh berbagai negara, baik yang didanai oleh pemerintah atau swasta.",
+        "sense":"bulan-1"
+      },
+      {
+        "text":"Bulan menyelesaikan orbit lengkap mengelilingi Bumi setiap 27,3 hari sekali (periode sideris).",
+        "sense":"bulan-1"
+      },
+      {
+        "text":"Orbit Bulan diperturbasi oleh Matahari dan Bumi dalam cara yang halus dan kompleks.",
+        "sense":"bulan-1"
+      },
+      {
+        "text":"Ukuran Bulan relatif besar jika dibandingkan dengan ukuran Bumi, yakni seperempat dari diameter dan 1/81 dari massa Bumi.",
+        "sense":"bulan-1"
+      },
+      {
+        "text":"Waktu yang dibutuhkan oleh Bulan untuk berputar pada porosnya kira-kira sama dengan waktu yang dibutuhkan untuk mengorbit Bumi.",
+        "sense":"bulan-1"
+      },
+      {
+        "text":"Bagian pinggir bulan purnama tampak sama terang dengan bagian tengahnya, tanpa pengelaman tungkai, karena sifat reflektif dari tanah Bulan, yang merefleksikan lebih banyak cahaya ke arah Matahari daripada ke arah lainnya.",
+        "sense":"bulan-1"
+      },
+      {
+        "text":"Ketinggian Bulan di langit bervariasi, meskipun memiliki batas yang hampir sama dengan Matahari, ketinggiannya berubah seiring dengan fase Bulan dan perubahan musim dalam setahun, dengan ketinggian tertinggi terjadi saat bulan purnama pada waktu musim dingin.",
+        "sense":"bulan-1"
+      },
+      {
+        "text":"Terdapat perdebatan mengenai apakah permukaan Bulan berubah dari waktu ke waktu.",
+        "sense":"bulan-1"
+      },
+      {
+        "text":"Sebaliknya, gerhana bulan terjadi saat bulan purnama, ketika Bumi berada di antara Matahari dan Bulan.",
+        "sense":"bulan-1"
+      },
+      {
+        "text":"Orbit Bulan yang mengelilingi Bumi mengalami inklinasi sekitar 5° dari orbit Bumi mengelilingi Matahari, sehingga gerhana tidak terjadi pada setiap bulan baru dan bulan purnama.",
+        "sense":"bulan-1"
+      },
+      {
+        "text":"Gerhana bulan adalah peristiwa terhalanginya cahaya matahari oleh bumi, sehingga tidak sampai ke bulan.",
+        "sense":"bulan-1"
+      },
+      {
+        "text":"Gerhana bulan sebagian akan menghiasi langit Indonesia pada peralihan 7 ke 8 Agustus 2017.",
+        "sense":"bulan-1"
+      },
+      {
+        "text":"Adapun Gerhana Matahari adalah peristiwa terhalangnya cahaya Matahari oleh Bulan sehingga tidak semuanya sampai ke Bumi dan selalu terjadi pada saat fase bulan baru.",
+        "sense":"bulan-1"
+      },
+      {
+        "text":"Gerhana Bulan adalah peristiwa ketika terhalanginya cahaya Matahari oleh Bumi sehingga tidak semuanya sampai ke Bulan.",
+        "sense":"bulan-1"
+      },
+      {
+        "text":"Gambaran penampakan bulan saat puncak gerhana terekam dari berbagai wilayah di Indonesia pada Selasa dini hari.",
+        "sense":"bulan-1"
+      },
+      {
+        "text":"Bulan dengan wajah itu bisa dilihat dengan mata telanjang, tak perlu alat bantu.",
+        "sense":"bulan-1"
+      },
+      {
+        "text":"Sementara, satu gerhana bulan lainnya cuma gerhana penumbra sehingga tak kasatmata.",
+        "sense":"bulan-1"
+      },
+      {
+        "text":"Foto-foto fase terjadinya gerhana bulan sebagian itu terekam dengan baik oleh fotografer Antara.",
+        "sense":"bulan-1"
+      },
+      {
+        "text":"Gerhana Bulan Parsial ini dapat diamati dengan mata telanjang dan tidak berbahaya sama sekali.",
+        "sense":"bulan-1"
+      },
+      {
+        "text":"Peristiwa yang merupakan salah satu akibat dinamisnya pergerakan posisi Matahari, Bumi, dan Bulan ini hanya terjadi pada saat fase purnama dan dapat diprediksi sebelumnya.",
+        "sense":"bulan-1"
+      },
+      {
+        "text":"Sebelum kompetisi kasta tertinggi itu berakhir, para klub-klub harus melewati tahapan bulan Ramadan yang kemungkinan jatuh pada akhir Mei hingga Juni.",
+        "sense":"bulan-2"
+      },
+      {
+        "text":"Sebab, Risha ingin berkomunikasi kembali dengan perwakilan klub ketika bulan Ramadan akan datang.",
+        "sense":"bulan-2"
+      },
+      {
+        "text":"Ada tiga pemain Liga 2 yang diberikan hukuman larangan bermain selama dua bulan.",
+        "sense":"bulan-2"
+      },
+      {
+        "text":"Pemain Persiraja Sdr. Ferry Komul dikenakan sanksi larangan beraktifitas sepak bola di lingkungan PSSI selama 2 bulan karena menyiram air ke wasit.",
+        "sense":"bulan-2"
+      },
+      {
+        "text":"Liga Inggris telah melewati bulan Agustus dan telah menyelesaikan tiga pekan pertama.",
+        "sense":"bulan-2"
+      },
+      {
+        "text":"Menurut peforma individu salama tiga pekan, operator Premier League telah memilih tujuh kandidat peraih gelar pemain terbaik bulan Agustus.",
+        "sense":"bulan-2"
+      },
+      {
+        "text":"Tujuh pemain telah dinominasikan untuk penghargaan Player of the Month Liga Inggris, bulan Agustus 2017.",
+        "sense":"bulan-2"
+      },
+      {
+        "text":"Pelatih Chelsea, Antonio Conte menyabet gelar Pelatih Terbaik Liga Inggris Bulan Desember.",
+        "sense":"bulan-2"
+      },
+      {
+        "text":"Sebelumnya, pelatih asal Italia itu juga menjadi Pelatih Terbaik bulan November dan Oktober 2016.",
+        "sense":"bulan-2"
+      },
+      {
+        "text":"Bulan Ramadan tahun ini, memiliki berkah tersendiri bagi artis peran sekaligus penyanyi Prilly Latuconsina.",
+        "sense":"bulan-2"
+      },
+      {
+        "text":"Bulan Ramadan ini lumayan melelahkan buat aku. Karena aku rutin isi acara sahur dan aku juga ada kerjaan di siangnya.",
+        "sense":"bulan-2"
+      },
+      {
+        "text":"Presiden menjelaskan bahwa evaluasi menteri dilakukan setiap minggu bahkan setiap bulan.",
+        "sense":"bulan-2"
+      },
+      {
+        "text":"Cak Imin, setuju dengan pernyataan Presiden Joko Widodo tentang enam bulan terakhir yang sia-sia.",
+        "sense":"bulan-2"
+      },
+      {
+        "text":"Ia mengatakan bahwa sudah cukup apa yang terjadi selama enam bulan terakhir.",
+        "sense":"bulan-2"
+      },
+      {
+        "text":"Untuk mengantisipasi hal-hal yang tidak diinginkan, Cak Imin mengimbau semua pihak untuk tidak menggelar pengumpulan massa setidaknya sampai tiga bulan ke depan.",
+        "sense":"bulan-2"
+      },
+      {
+        "text":"Sudah enam-delapan bulan ini tabungan energi kita habis untuk hal yang tidak berguna sama sekali.",
+        "sense":"bulan-2"
+      },
+      {
+        "text":"Pelatih Reading, Jaap Stam meraih gelar pelatih terbaik di kasta kedua Liga Inggris bulan Januari 2017.",
+        "sense":"bulan-2"
+      },
+      {
+        "text":"Presiden Joko Widodo memberikan apresiasi kepada jajaran Polri yang mampu mengamankan jalannya Bulan Suci Ramadhan dan Lebaran Tahun 2017.",
+        "sense":"bulan-2"
+      },
+      {
+        "text":"Polri menurut Jokowi telah berhasil menjaga stabilitas harga bahan pangan di bulan Ramadhan dan menurunkan angka kecelakaan pada saat pelaksanaan mudik lebaran.",
+        "sense":"bulan-2"
+      },
+      {
+        "text":"Lima fakta banjir besar 21 tahun silam, ketika Jakarta separuh tenggelam di bulan puasa.",
+        "sense":"bulan-2"
+      },
+      {
+        "text":"Diprediksikan intensitas hujan pada bulan Februari akan tinggi hingga sangat tinggi, khususnya berpeluang terjadi di sebagian Sumbar, Jambi, Sumsel, Bengkulu, Lampung, seluruh Jawa, Bali, NTB, NTT, Sulsel, Sulbar, Sulteng, Sultra, Papua dan Papua Barat.",
+        "sense":"bulan-2"
+      },
+      {
+        "text":"Federasi Sepak Bola Indonesia (PSSI) rencananya akan menggulirkan ajang turnamen Piala Presiden 2017 pada bulan Februari.",
+        "sense":"bulan-2"
+      },
+      {
+        "text":"Pre-seasonnya bulan Februari.",
+        "sense":"bulan-2"
+      },
+      {
+        "text":"Arema FC resmi akan memindahkan sementara kandang mereka di Liga 1 selama bulan Ramadan.",
+        "sense":"bulan-2"
+      },
+      {
+        "text":"Selama bulan puasa, Arema pindah kandang ke Stadion Gajayana.",
+        "sense":"bulan-2"
+      },
+      {
+        "text":"Hal ini karena bulan kelahiran mempengaruhi segala sesuatu mulai dari kecerdasan hingga panjangnya usia.",
+        "sense":"bulan-2"
+      },
+      {
+        "text":"Anak yang lahir bulan Desember lebih mungkin menjadi dokter gigi.",
+        "sense":"bulan-2"
+      },
+      {
+        "text":"Anak yang lahir bulan Januari lebih sulit jadi dokter gigi tapi cenderung menjadi debt collector.",
+        "sense":"bulan-2"
+      },
+      {
+        "text":"Anak yang lahir bulan Februari kemungkinan besar menjadi seniman.",
+        "sense":"bulan-2"
+      },
+      {
+        "text":"Anak yang lahir bulan April dan Mei memiliki pekerjaan yang lebih bervariasi.",
+        "sense":"bulan-2"
+      },
+      {
+        "text":"Anak yang lahir di bulan-bulan musim panas memiliki kemungkinan lebih rendah untuk menjadi pemain sepakbola, dokter gigi atau dokter.",
+        "sense":"bulan-2"
+      },
+      {
+        "text":"Nah, kini ada penelitian lain yang mengaitkan bulan kelahiran dengan kecerdasan.",
+        "sense":"bulan-2"
+      },
+      {
+        "text":"Penghina Jokowi dan Kapolri diancam hukuman penjara satu tahun enam bulan.",
+        "sense":"bulan-2"
+      },
+      {
+        "text":"(Pelaku) sudah dijerat dengan pasal 207 KUHPidana tentang penghinaan, dihukum selama 1 tahun 6 bulan penjara.",
+        "sense":"bulan-2"
+      },
+      {
+        "text":"Ada lebih banyak air di bulan daripada yang kita duga sebelumnya.",
+        "sense":"bulan-1"
+      },
+      {
+        "text":"Namun, para ilmuwan tidak dapat memastikan apakah sampel Apollo tersebut bersifat unik ataukah banyak bantalan air lainnya yang memenuhi bulan.",
+        "sense":"bulan-1"
+      },
+      {
+        "text":"Hasilnya, terdapat endapan vulkanik yang luas, yang menunjukkan bahwa materi di dalam bulan lebih basah dari yang diperkirakan sebelumnya.",
+        "sense":"bulan-1"
+      },
+      {
+        "text":"Pada tahun 2009, NASA menabrakkan sebuah roket dan satelit ke sebuah kawah di kutub selatan bulan, dengan harapan bisa mendapat bukti tambahan mengenai air bulan.",
+        "sense":"bulan-1"
+      },
+      {
+        "text":"Peristiwa itu terjadi pada tahun 1969 ketika Apollo 10 mengorbit bulan.",
+        "sense":"bulan-1"
+      },
+      {
+        "text":"Betapa pun, bulan tidak memiliki medan magnet dan tak memiliki cukup atmosfer untuk menghasilkan suara-suara itu.",
+        "sense":"bulan-1"
+      },
+      {
+        "text":"Michael Collins, pilot Apollo 11, mengatakan dia juga mendengar suara-suara saat terbang di sekitar sekitar sisi gelap bulan tapi diberitahu oleh para insinyur bahwa itu hanya interferensi radio.",
+        "sense":"bulan-1"
+      },
+      {
+        "text":"Bahwa suara-suara itu muncul ketika kedua radio dihidupkan di kedua modul dan berada dekat satu sama lain, tapi berhenti ketika modul mendarat di bulan dengan Neil Armstrong dan Buzz Aldrin di dalamnya.",
+        "sense":"bulan-1"
+      },
+      {
+        "text":"Semenjak itu, para ahli geologi mulai mencurigai bahwa bulan memiliki waduk tersembunyi yang terkunci di bebatuannya.",
+        "sense":"bulan-1"
+      },
+      {
+        "text":"Menurut Francis McCubbin, ahli geologi, semua air di bagian dalam bulan sama dengan lautan seluas halaman yang menutupi seluruh permukaan bulan.",
+        "sense":"bulan-1"
+      },
+      {
+        "text":"Filsuf Aristoteles dan Pliny the Elder berpendapat bahwa bulan purnama menularkan kegilaan pada orang-orang yang rentan.",
+        "sense":"bulan-1"
+      },
+      {
+        "text":"Mereka percaya bahwa otak manusia, yang sebagian besarnya terdiri dari air, dipengaruhi oleh Bulan yang menguasai pasang surut, tetapi gravitasi Bulan terlalu kecil untuk memengaruhi satu orang.",
+        "sense":"bulan-1"
+      },
+      {
+        "text":"Bahkan saat ini, orang-orang percaya bahwa pasien rumah sakit jiwa, kecelakaan lalu lintas, kasus pembunuhan atau bunuh diri akan meningkat pada saat bulan purnama, meskipun tidak ada bukti ilmiah yang mendukung pernyataan tersebut.",
+        "sense":"bulan-1"
+      },
+      {
+        "text":"Bulan berada pada rotasi sinkron; waktu yang dibutuhkan oleh Bulan untuk berputar pada porosnya kira-kira sama dengan waktu yang dibutuhkan untuk mengorbit Bumi.",
+        "sense":"bulan-1"
+      },
+      {
+        "text":"Bulan memiliki albedo yang sangat rendah, dengan tingkat kecerahan yang sedikit lebih terang dari aspal hitam.",
+        "sense":"bulan-1"
+      },
+      {
+        "text":"Selain itu, konstansi warna pada sistem visual Bulan mengkalibrasi hubungan antara warna objek dan sekitarnya, karena langit di sekitar Bulan relatif gelap, Bulan yang diterangi Matahari tampak sebagai benda langit yang terang.",
+        "sense":"bulan-1"
       }
     ]
   }
